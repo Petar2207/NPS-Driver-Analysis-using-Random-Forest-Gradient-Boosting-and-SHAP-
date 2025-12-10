@@ -85,10 +85,3 @@ The notebook generates:
 
 This allows you to see **which factors consistently emerge as the biggest drivers**.
 
----
-
-## 🛠️ How to Run
-
-### Install dependencies:
-```bash
-pip install -r requirements.txt
