@@ -1,4 +1,4 @@
-# NPS Driver Analysis using Random Forest, Gradient Boosting, and SHAP  
+# NPS Driver Analysis using Random Forest and SHAP  
 Author: **Petar**
 
 ## 📘 Overview
@@ -19,10 +19,8 @@ and reveal the most influential NPS drivers.
 
 ## 🎯 Project Goals
 - Convert NPS numerical scores into meaningful customer classes  
-- Train classification models:
+- Train classification model:
   - **Random Forest Classifier**
-  - **Gradient Boosting Classifier**
-- Compare performance across models  
 - Use **SHAP** to explain predictions and identify the biggest NPS drivers  
 - Provide clear insights for decision-makers
 
@@ -38,19 +36,13 @@ and reveal the most influential NPS drivers.
 - Creation of NPS categories: Detractor / Passive / Promoter  
 
 ### 2. Models Used
-The project includes two tree-based ensemble models:
+The project includes tree-based ensemble model:
 
 #### 🌲 **Random Forest Classifier**
 - Robust to noise  
 - Handles nonlinear relationships  
 - Captures complex interactions  
 - Works well with SHAP (TreeExplainer)
-
-#### 🔥 **Gradient Boosting Classifier**
-(e.g., XGBoost, LightGBM, or sklearn GradientBoosting)
-- Sequentially builds strong learners  
-- High accuracy on structured data  
-- Provides SHAP-friendly model structure
 
 ### 3. Explainability with SHAP
 SHAP is applied to each model to reveal:
@@ -76,7 +68,6 @@ The notebook generates:
 - Classification metrics (accuracy, F1-score, confusion matrix)
 - SHAP summary plots for:
   - Random Forest  
-  - Gradient Boosting  
 - Comparison of feature importance across models  
 - Driver insights, such as:
   - "Feature A strongly increases promoter probability"
